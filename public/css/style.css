@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.daftar-buku {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    font: inherit;
+    border-radius: 4px;
+}
+
+input,
+select {
+    border: 1px solid #94a3b8;
+}
+
+button {
+    border: none;
+    background-color: #1e3a8a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 16px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        margin: 16px;
+        padding: 16px;
+    }
+}
